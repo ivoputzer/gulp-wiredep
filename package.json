@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/ivoputzer/gulp-wiredep",
   "dependencies": {
-    "wiredep": "^2.2.2"
+    "wiredep": "4.0.0"
   }
 }
