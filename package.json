@@ -1,13 +1,10 @@
 {
   "name": "gulp-wiredep",
-  "version": "0.0.0",
-  "description": "wraps wiredep",
+  "version": "0.0.1",
+  "description": "gulp plugin for wiredep.",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "mocha"
+    "test": "m.test"
   },
   "repository": {
     "type": "git",
@@ -26,5 +23,8 @@
   "homepage": "https://github.com/ivoputzer/gulp-wiredep",
   "dependencies": {
     "wiredep": "^2.2.2"
+  },
+  "devDependencies": {
+    "m.test": "0.0.43"
   }
 }
