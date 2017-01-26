@@ -1,3 +1,5 @@
 const assert = require('assert')
 
-test('gulp-wiredep', () => assert(require('..')))
+test('gulp-wiredep', function () {
+  assert(require('..'))
+})
