@@ -1,6 +1,6 @@
 {
   "name": "gulp-wiredep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gulp plugin for wiredep.",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     ]
   },
   "dependencies": {
-    "wiredep": "^2.2.2"
+    "wiredep": "^3.0.0"
   },
   "devDependencies": {
     "m.test": "0.0.43"
