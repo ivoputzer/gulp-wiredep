@@ -21,6 +21,11 @@
     "url": "https://github.com/ivoputzer/gulp-wiredep/issues"
   },
   "homepage": "https://github.com/ivoputzer/gulp-wiredep",
+  "standard": {
+    "globals": [
+      "test"
+    ]
+  },
   "dependencies": {
     "wiredep": "^2.2.2"
   },
