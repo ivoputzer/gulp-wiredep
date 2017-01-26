@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+- 7
+- 6
+- 5
+- 4
+- 0
+before_install:
+- npm i -g standard
+install:
+- NODE_ENV=production npm install
+script:
+- standard
+deploy:
+  provider: npm
+  email: ivo.putzer@gmail.com
+  api_key:
+    secure: C/P9C1Ao6VPEsOpsnrGivKdLNpN631LRLebIY9JoLHHnZfVG9I1gAAUE7dwiNrKEbOJ7bbPyU85B+KJ6Lc0WfOHJK/h7o7yFPNaAk+2f+fu3QVdTf5V808lQpMaucggx47CJMg72FuDpXR+ErpBYh1DZJf+nyjdo+XHVzup8vvo9UgZaVe5LeRox+S8N200iWoucU3NxMvM5mGe/CRIWzbWAuGCCiX4f7sEIPlVPWze1G5DE9byxMmYSf6mqE2ZaPhR9vCSr1cpqS3p6epRPePeqRhsbOeQO/KX0V9EeS6udpsYZLYx/t2K94XFF5UNdOeVNyF0+OhBHI51EAeaIcSJBC9ef7yafH3XaGQbtaeZHieLDd/9aLx42NKJv9pKyO+nv5qe+EAxzlSxQEeZRfVyt5I8at86u1rfljqiyOnXMUkRC1J19UZo+2gYn5gWk3pp8Z4Fjr7zB0KP2le0wPqiu/SeoW4xgPFU2A3rYqr8fUBFTwUrdg+jwqHzzFlPASGaxRfnqL1BU0xKyFIwW4OYvia+vbZu1eHF8afsJYkZuiZ/vxQu69fyI+sGQa0KdkueD382x/6M/RwJInDUnzoO29/jI7oF2DTLmJ5xRrMJDeVdFMjH1Cz2noY082iOgfxERzxgp1lQhf2vBoQhOIjF06Ud+eFwYAATRbBK8OYs=
+  on:
+    repo: ivoputzer/gulp-wiredep
+    branch: master

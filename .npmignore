@@ -1,5 +1,7 @@
-node_modules/
+test/
 todo/
+
+.travis.yml
 
 *.log
 *.tgz
