@@ -1,3 +1,1 @@
-var wiredep = require('wiredep');
-
-module.exports = wiredep.stream;
+module.exports = require('wiredep').stream
