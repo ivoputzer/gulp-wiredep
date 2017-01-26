@@ -4,9 +4,9 @@
 
 ## standard usage
 
-```
-var gulp = require('gulp')
-  , wiredep = require('gulp-wiredep')
+```javascript
+const gulp = require('gulp')
+const wiredep = require('gulp-wiredep')
 
 gulp.task('bower', function () {
   gulp.src('./src/footer.html')
@@ -14,15 +14,15 @@ gulp.task('bower', function () {
       optional: 'configuration',
       goes: 'here'
     }))
-    .pipe(gulp.dest('./dest'));
-});
+    .pipe(gulp.dest('./dest'))
+})
 ```
 
 ## usage with plugin loader
 
-```
-var gulp = require('gulp')
-  , plug = require('gulp-plugin-loader')
+```javascript
+const gulp = require('gulp')
+const plug = require('gulp-plugin-loader')
 
 gulp.task('bower', function () {
   gulp.src('./src/footer.html')
@@ -30,6 +30,6 @@ gulp.task('bower', function () {
       optional: 'configuration',
       goes: 'here'
     }))
-    .pipe(gulp.dest('./dest'));
-});
+    .pipe(gulp.dest('./dest'))
+})
 ```
