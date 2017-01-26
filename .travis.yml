@@ -7,9 +7,10 @@ node_js:
 - 0
 before_install:
 - npm i -g standard
-- standard
 install:
-- NODE_ENV=ci npm i
+- NODE_ENV=production npm install
+script:
+- standard
 deploy:
   provider: npm
   email: ivo.putzer@gmail.com
