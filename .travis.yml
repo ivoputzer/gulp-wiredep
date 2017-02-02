@@ -7,9 +7,6 @@ node_js:
 - 0
 before_install:
 - npm i -g standard
-install:
-- NODE_ENV=production npm install
-script:
 - standard
 deploy:
   provider: npm
