@@ -1,5 +1,11 @@
-const assert = require('assert')
+const {equal, ok} = require('assert')
 
 test('gulp-wiredep', function () {
-  assert(require('..'))
+  const wiredep = require('..')
+  test('exports a callable', function () {
+    equal(typeof wiredep, 'function')
+  })
+  test('exports a callable 1', function () {
+    equal(wiredep().constructor.name, 'DestroyableTransform')
+  })
 })
