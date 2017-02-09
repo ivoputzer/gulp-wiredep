@@ -5,8 +5,8 @@ node_js:
 - 5
 - 4
 before_install:
-- npm i -g standard
-- standard
+- npm i standard
+- node_modules/.bin/standard
 deploy:
   provider: npm
   email: ivo.putzer@gmail.com

@@ -1,8 +1,6 @@
-const wiredep = require('../..')
-const equal = require('assert').equal
-
 test('module/exports', function () {
+  const exports = require('../..')
   test('is callable', function () {
-    equal(typeof wiredep, 'function')
+    require('assert').equal(typeof exports, 'function')
   })
 })
